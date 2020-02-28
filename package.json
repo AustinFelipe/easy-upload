@@ -15,6 +15,9 @@
   "typings": "lib/easy-upload.d.ts",
   "repository": "git@github.com:AustinFelipe/easy-upload.git",
   "author": "Austin Felipe <austin.felipe@live.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
