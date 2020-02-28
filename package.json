@@ -1,7 +1,7 @@
 {
-  "name": "easy-upload",
+  "name": "@austinfelipe/easy-upload",
   "version": "0.0.1",
-  "description": "File/Video upload library with ZERO dependencies.",
+  "description": "File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊",
   "keywords": [
     "video upload",
     "file upload"
