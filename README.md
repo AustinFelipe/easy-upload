@@ -1,4 +1,4 @@
-# Easy Upload
+# EasyUpload
 
 File/Video upload library with ZERO dependencies.
 
