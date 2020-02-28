@@ -24,6 +24,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v1
         with:
+          node-version: 12
           registry-url: https://registry.npmjs.org
       - name: Publish to Npm
         run: yarn publish
