@@ -7,7 +7,7 @@
     "file upload"
   ],
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "yarn run build",
     "build": "tsc",
     "test": "jest"
   },
