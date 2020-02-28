@@ -1,0 +1,46 @@
+{
+  "name": "easy-upload",
+  "version": "0.0.1",
+  "description": "File/Video upload library with ZERO dependencies.",
+  "keywords": [
+    "video upload",
+    "file upload"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "main": "lib/easy-upload.js",
+  "typings": "lib/easy-upload.d.ts",
+  "repository": "git@github.com:AustinFelipe/easy-upload.git",
+  "author": "Austin Felipe <austin.felipe@live.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test",
+      "pre-push": "yarn test"
+    }
+  }
+}
