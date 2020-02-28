@@ -1,4 +1,4 @@
-import SignedUrl from "./SignedUrl";
+import SignedUrl from "./signedUrl";
 import UploadConfiguration from "./uploadConfiguration";
 import UploadResponse from "./uploadReponse";
 import FileInfo from "./fileInfo";

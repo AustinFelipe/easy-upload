@@ -2,7 +2,7 @@ import Uploader from "../src/contracts/uploader";
 import UploadConfiguration from "../src/contracts/uploadConfiguration";
 import UploadResponse from "../src/contracts/uploadReponse";
 import FileInfo from "../src/contracts/fileInfo";
-import SignedUrl from "../src/contracts/SignedUrl";
+import SignedUrl from "../src/contracts/signedUrl";
 import { PORT } from "./index";
 import { httpRequest } from "../src/utils/httpRequest";
 
