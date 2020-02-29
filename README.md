@@ -2,6 +2,8 @@
 
 ![Publish package](https://github.com/AustinFelipe/easy-upload/workflows/Publish%20package/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/AustinFelipe/easy-upload/badge.svg?branch=master)](https://coveralls.io/github/AustinFelipe/easy-upload?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a00cbde78fe60e45ad79/maintainability)](https://codeclimate.com/github/AustinFelipe/easy-upload/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a00cbde78fe60e45ad79/test_coverage)](https://codeclimate.com/github/AustinFelipe/easy-upload/test_coverage)
 
 File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊
 
