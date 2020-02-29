@@ -1,4 +1,4 @@
-name: Publish to GitHub Package Registry
+name: Publish package
 
 on:
   push:
@@ -30,6 +30,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+          registry-url: https://registry.npmjs.org
       - name: Install and test
         run: |
           yarn
