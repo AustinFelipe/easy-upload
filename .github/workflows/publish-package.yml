@@ -67,7 +67,7 @@ jobs:
         run: |
           yarn
       - name: CodeClimate upload
-        uses: paambaati/codeclimate-action@v2.2.4
+        uses: paambaati/codeclimate-action@v2.5.3
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CODE_CLIMATE_TOKEN }}
         with:
