@@ -32,11 +32,12 @@ jobs:
           node-version: 12
           always-auth: true
           registry-url: https://registry.npmjs.org
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Install and test
         run: |
           yarn
           yarn test
       - name: Publish to npm
-        run: yarn publish --access public
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
