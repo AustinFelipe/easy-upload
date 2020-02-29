@@ -1,4 +1,3 @@
-const isNode = typeof module !== "undefined" && module.exports;
 export const httpRequest: any =
   typeof fetch !== "undefined" ? fetch : fetchFallback;
 
@@ -6,8 +5,11 @@ function fetchFallback(
   url: string,
   { headers, method, body }: any = {}
 ): Promise<any> {
+  const isNode =
+    !process.env.NOT_NODE && typeof module !== "undefined" && module.exports;
+
   if (!isNode) {
-    throw new Error("Not NodeJs or fetch support was found.");
+    throw new Error("No NodeJs nor fetch support was found.");
   }
 
   let _internalData = "";

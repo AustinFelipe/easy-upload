@@ -4,9 +4,7 @@ import FileInfo from "./contracts/fileInfo";
 import { httpRequest } from "./utils/httpRequest";
 
 export default class EasyUpload {
-  constructor(private uploader: Uploader) {
-    if (!this.uploader) throw new Error("[upload] cannot be null");
-  }
+  constructor(private uploader: Uploader) {}
 
   async sendFile(fileInfo: FileInfo): Promise<UploadResponse> {
     const { signedUrl } = await this.uploader.getSignedUrl();
@@ -14,8 +12,8 @@ export default class EasyUpload {
     const body = await this.uploader.prepareToSend(fileInfo);
 
     const response = await httpRequest(signedUrl, {
-      headers: headers || {},
-      method: sendMethod || "POST",
+      headers: headers,
+      method: sendMethod,
       body: body
     });
 

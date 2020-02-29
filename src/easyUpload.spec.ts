@@ -3,6 +3,7 @@ import testApp, { PORT, SEND_FILE_URL } from "../testServer";
 import TestUploader from "../testServer/testUploadImplementation";
 import TestFileInfo from "../testServer/testFileInfoImplementation";
 import { Server } from "http";
+import UploadConfiguration from "./contracts/uploadConfiguration";
 
 describe("test uploader implementation", () => {
   let server: Server;
