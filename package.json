@@ -1,6 +1,6 @@
 {
   "name": "@austinfelipe/easy-upload",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊",
   "keywords": [
     "video upload",
@@ -9,7 +9,8 @@
   "scripts": {
     "prepare": "yarn run build",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "main": "lib/easy-upload.js",
   "typings": "lib/easy-upload.d.ts",

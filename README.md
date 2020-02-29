@@ -1,5 +1,7 @@
 # EasyUpload
 
+![Publish package](https://github.com/AustinFelipe/easy-upload/workflows/Publish%20package/badge.svg)
+
 File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊
 
 # TL;DR
