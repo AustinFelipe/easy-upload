@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  publish-gpr:
+  publish-github:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -22,10 +22,20 @@ jobs:
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
+          node-version: 12
           registry-url: https://registry.npmjs.org
-      - name: Publish to Npm
+      - name: Install and test
+        run: |
+          yarn
+          yarn test
+      - name: Publish to npm
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
