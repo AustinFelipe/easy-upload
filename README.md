@@ -1,6 +1,7 @@
 # EasyUpload
 
 ![Publish package](https://github.com/AustinFelipe/easy-upload/workflows/Publish%20package/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/AustinFelipe/easy-upload/badge.svg?branch=master)](https://coveralls.io/github/AustinFelipe/easy-upload?branch=master)
 
 File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊
 

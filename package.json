@@ -1,6 +1,6 @@
 {
   "name": "@austinfelipe/easy-upload",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "File/Video upload wrapper to ease bucket/storage/space/cdn integration 😛👊",
   "keywords": [
     "video upload",
